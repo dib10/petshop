@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare</title>
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <link rel="icon" href="Imagens/patacachorro.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h1>Bem-vindo à PetCare!</h1>
+        <br>
+        <img src="Imagens/PetCare-removebg.png" alt="logo petcare" class="logo-petcare">
+        <h1 class="missao">Nossa Missão 🐶💙</h1>
+        <p id="paragrafoindex">
+            
+            <br><br>
+            No PetCare, acreditamos que cada animalzinho é parte da nossa família e merece ser tratado com todo o carinho e cuidado. Nossa iniciativa nasceu da vontade de proporcionar aos nossos clientes uma experiência diferenciada, longe do tratamento impessoal de um cliente ou mercadoria. Aqui, o seu pet é tratado como se estivesse na nossa própria casa.
+            <br><br>
+            Nossa equipe é composta por amantes de animais, experientes e altamente capacitados para oferecer o melhor atendimento e cuidado aos nossos peludos. Sabemos que cada pet é único, e por isso personalizamos nossos serviços de acordo com as necessidades individuais de cada um.
+            <br><br>
+            No PetCare, você encontrará uma ampla gama de serviços, desde banho e tosa até consultas veterinárias, além de produtos de qualidade para garantir o bem-estar do seu amiguinho. Nosso objetivo é proporcionar uma experiência positiva e agradável tanto para você quanto para o seu pet.
+            <br><br>
+            Portanto, se você busca um lugar onde o seu pet será tratado com todo o amor, cuidado e respeito que ele merece, o PetCare é o local ideal para você. Venha nos visitar e faça parte da nossa família!
+            <br><br>
+            Nós nos orgulhamos em oferecer o melhor para o seu amiguinho de quatro patas. Conte conosco no cuidado e bem-estar do seu pet.
+        </p>
+    </section>
+    <br>
+    <h1>Nossos fiéis companheiros! 💙🐾</h1>
+    <br>
+    <div class="slider-container">
+        <img src="Imagens/cliente1.jpg" alt="Pet 1">
+        <img src="Imagens/cliente2.jpg" alt="Pet 2">
+        <img src="Imagens/cliente3.jpg" alt="Pet 3">
+        <img src="Imagens/cliente4.jpg" alt="Pet 4">
+
+
+    </div>
+    <div class="slider-controls">
+        <img src="Imagens/patacachorro.png" alt="Anterior" onclick="prevSlide()">
+        <img src="Imagens/patacachorro.png" alt="Próximo" onclick="nextSlide()">
+    </div>
+    
+    
+    <footer>
+        <div class="rodape-content">
+            <p>Todos os direitos reservados PetCare &#169; Contato: (11) 99015-2399</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var slideIndex = 0;
+        var slides = document.querySelectorAll('.slider-container img');
+
+        function showSlide() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            showSlide();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            showSlide();
+        }
+
+        showSlide();
+    </script>
+</body>
+</html>

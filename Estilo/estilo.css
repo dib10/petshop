@@ -1,0 +1,414 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    position: relative; /* Adicionado para o posicionamento absoluto do rodapé */
+    min-height: 100vh; /* Adicionado para garantir que a página tenha altura mínima de viewport */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Estilos para a página index */
+#paragrafoindex {
+    font-family:  'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+/* Estilos para o slide */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altere o valor da altura conforme necessário */
+    overflow: hidden;
+}
+
+
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.slider-controls img {
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Estilos do menu de navegação */
+nav {
+    background-color: rgb(77, 121, 158);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Estilos do banner */
+.banner {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.banner img {
+    width: 200px;
+}
+
+.banner h1 {
+    color: #333;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+/* Estilos do bloco "Sobre Nós" */
+.sobre {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-entre-em-contato {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-entre-em-contato:hover {
+    background-color: #666;
+}
+
+/* Estilos do bloco "Serviços" */
+img {
+    width: 100%;
+}
+
+
+
+.servicos-container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 17px;
+    background-color: #ffffff;
+    border: 3px double rgb(77, 121, 158);
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 40%;
+    
+}
+.assunto {
+    color: rgb(77, 121, 158);
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 11px; /* espaçamento do assunto */
+}
+
+.texto {
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;}
+
+
+@media (min-width: 768px) {
+    .servicos-container {
+        flex-wrap: nowrap;
+    }
+
+    .servicos-container .foto {
+        width: 5%;
+    }
+
+    .servicos-container .assunto {
+        width: 25%;
+    }
+
+    .servicos-container .texto {
+        width: 70%;
+    }
+}
+
+
+
+/* Estilos adicionais para a página inicial */
+#content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#content h1 {
+    color: #333;
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+#content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#content strong {
+    font-weight: bold;
+}
+
+/* Estilos da logo */
+.logo-petcare {
+    width: 350px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Manter a proporção original */
+}
+
+/* Estilos da seção "Produtos" */
+#produtos {
+    margin-top: 50px;
+    text-align: center;
+    min-height: calc(100vh - 150px); /* Ajuste o valor 150px de acordo com o tamanho do cabeçalho e rodapé */
+}
+
+#produtos h1 {
+    position: fixed;
+    top: 0;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+#produtos h2 {
+    color: rgb(77, 121, 158);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#produtos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#produtos li {
+    width: 200px;
+    margin: 10px;
+}
+
+#produtos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#produtos p {
+    color: #666;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Estilos adicionais para as imagens dos produtos */
+#produtos-lista img {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+#produtos-lista img:hover {
+    transform: scale(1.2); /* Amplia a imagem em 20% */
+}
+/* Estilos do vídeo */
+.video-redimensionado {
+    width: 50%; /* Reduza o valor para ajustar o tamanho do vídeo */,
+    height: auto;
+}
+
+/* Estilos para telas menores que 600 pixels */
+@media (max-width: 600px) {
+    .logo-petcare {
+        width: 280px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+    }
+}
+
+/* Estilos para telas entre 601 e 1024 pixels */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo-petcare {
+        width: 280px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+    }
+}
+
+/* Estilos específicos para a página de contato */
+body#contato {
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 65px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea[name="mensagem"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #030303;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: hsl(203, 65%, 50%);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(56, 92, 120);
+}
+
+/* estilizando icones de rede social */
+.redes-container {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px; /* Adicione uma margem inferior suficiente para acomodar os ícones */
+}
+
+
+/* Estilizando os ícones de rede social */
+.rede-social {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+}
+
+.rede-social img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.rede-social:hover {
+    background-color: #ccc;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape-content {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilos do símbolo autoral */
+.rodape-content::before {
+    content: "\00A9";
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 600px) {
+    .rede-social {
+      width: 60px; /* Ajuste o tamanho para telas menores */
+      height: 60px; /* Ajuste o tamanho para telas menores */
+      margin: 10px;
+    }
+  
+    .rede-social img {
+      width: 60%; /* Ajuste o tamanho para telas menores */
+      height: 60%; /* Ajuste o tamanho para telas menores */
+      object-fit: contain;
+    }
+  }

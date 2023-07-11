@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare</title>
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <link rel="icon" href="Imagens/patacachorro.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="produtos" class="container">
+        
+        <ul id="produtos-lista">
+            <li>
+                <h2>Cosméticos</h2>
+                <br>
+                <img src="Imagens/shampoo2.webp" alt="Shampoo para pets">
+            </li>
+            <li>
+                <h2>Coleiras</h2>
+                <br>
+                <img src="Imagens/coleira.jpg" alt="Coleiras">
+            </li>
+            <li>
+                <h2>Alimentação</h2>
+                <br>
+                <img src="Imagens/ração.jpg" alt="Ração">
+            </li>
+            <li>
+                <h2>Brinquedos</h2>
+                <br>
+                <img src="Imagens/brinquedos.jpg" alt="Outras ideias de produtos">
+            </li>
+        </ul>
+    </div>
+     <!-- não é uma boa prática-->
+    <footer >
+        <div class="rodape-content">
+            <p>Todos os direitos reservados PetCare &#169; Contato: (11) 99015-2399</p>
+        </div>
+    </footer>
+    <script>
+        // Seleciona todas as imagens dentro da lista de produtos
+        const imagens = document.querySelectorAll('#produtos img');
+
+        // Adiciona o evento de mouseover a cada imagem
+        imagens.forEach(imagem => {
+            imagem.addEventListener('mouseover', () => {
+                imagem.style.transform = 'scale(1.2)'; // Amplia a imagem em 20%
+            });
+
+            imagem.addEventListener('mouseout', () => {
+                imagem.style.transform = 'scale(1)'; // Retorna ao tamanho original
+            });
+        });
+    </script>
+</body>
+</html>
