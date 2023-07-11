@@ -1,4 +1,4 @@
-## Documentação do Projeto: Petshop Simples
+## Documentação do Projeto: Petshop 
 
 Bem-vindo à documentação do projeto de Petshop. Este projeto foi desenvolvido no primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, seguindo restrições de conhecimento e sem o uso de templates ou frameworks prontos, como Bootstrap, jQuery ou FontAwesome.
 
