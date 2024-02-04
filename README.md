@@ -31,5 +31,4 @@ Alguns detalhes adicionais incluem:
 
 O projeto de Petshop  oferece uma implementação básica de um site de petshop, cumprindo as restrições de conhecimento e sem a utilização de templates ou frameworks prontos. É importante mencionar que, devido às limitações de conhecimento e tempo, o aluno pode ter recorrido a alguns elementos limitados que podem ser considerados "gambiarras" no código. No entanto, o aluno está disposto a realizar alterações conforme seu conhecimento se expande e adquire uma compreensão mais aprofundada dos conceitos de desenvolvimento web.
 
-Fique à vontade para explorar o código-fonte do projeto e contribuir com melhorias, caso deseje. Qualquer dúvida ou sugestão, entre em contato com o autor do projeto. Agradecemos por seu interesse no projeto de Petshop!
-
+Fique à vontade para explorar o código-fonte do projeto e contribuir com melhorias, caso deseje. Qualquer dúvida ou sugestão, entre em contato com o autor do projeto. 
